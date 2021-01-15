@@ -1,10 +1,9 @@
 //esercizio base
-
-//funzione: crea un array di n numeri senza duplicati; restituisce un array.
+//funzione: crea un arrai di numeri random senza duplicati; restituisce un array
 function createRandomNumbers(howMany, min, max) {
-    var result = []; //array which will contain the random numbers
+    var result = []; //conterrà i numeri restituiti dalla funzione
+    var number = 0; //numero random (inizializzazione)
 
-    var number = 0;
     for(var i = 0; i < howMany;) {
         number = Math.floor(Math.random() * (max - min + 1) ) + min;
 
@@ -23,7 +22,6 @@ var randomNumbers = createRandomNumbers(5, 1, 100);
 
 //mostro i numeri all'utente
 alert("Leggi e memorizza i numeri seguenti: " + randomNumbers.join(", ") + ".");
-console.log(randomNumbers)
 
 setTimeout(function() {
     var userNumber = 0; //numero inserito da utente (inizializzazione variabile)
@@ -37,5 +35,5 @@ setTimeout(function() {
     }
     alert("Hai indovinato " + guessedNumbers.length + " numeri: " + guessedNumbers.join(", "));
 
-}, 1000);
+}, 30000);
 
