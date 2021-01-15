@@ -65,8 +65,8 @@ function victoryMessage(userNumbersArray, randomNumbersArray) {
 //function: game
 //???? dovrei passare le altre funzioni come argomenti o va bene prenderle da fuori ????
 function game(randomNumbersArray) {
-    var userNumber = 0; //numero inserito da utente (inizializzazione variabile)
-    var guessedNumbers = []; //numeri indovinati dall'utente
+    var userNumber = 0; //number from the user (initialization)
+    var guessedNumbers = []; //numbers guessed by the user (inizialization)
 
     for(var i = 0; i < randomNumbersArray.length; i++) {
 
