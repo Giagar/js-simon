@@ -5,9 +5,8 @@ var difficulty = 5;
 var time = 30000;
 //arr containing random numbers
 var randomNumbers = [];
-var guessedNumbers = []; //arr containing the numbers the user guessed
 
-//
+
 //function which creates an array of n numbers with no duplicates; it returns an array
 function createRandomNumbers(howMany, min, max) {
     var result = []; //array which will contain the random numbers
