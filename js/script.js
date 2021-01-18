@@ -21,19 +21,19 @@ function createRandomNumbers(howMany, min, max) {
 var randomNumbers = createRandomNumbers(5, 1, 100);
 
 //mostro i numeri all'utente
-alert("Leggi e memorizza i numeri seguenti: " + randomNumbers.join(", ") + ".");
+alert('Leggi e memorizza i numeri seguenti: ' + randomNumbers.join(', ') + '.');
 
 setTimeout(function() {
     var userNumber = 0; //numero inserito da utente (inizializzazione variabile)
     var guessedNumbers = []; //numeri indovinati dall'utente
     for(var i = 0; i < randomNumbers.length; i++) {
-        userNumber = parseInt(prompt("Inserisci uno dei numeri mostrati in precedenza:"));
+        userNumber = parseInt(prompt('Inserisci uno dei numeri mostrati in precedenza:'));
 
         if(randomNumbers.includes(userNumber)) {
             guessedNumbers.push(userNumber);
         }
     }
-    alert("Hai indovinato " + guessedNumbers.length + " numeri: " + guessedNumbers.join(", "));
+    alert('Hai indovinato ' + guessedNumbers.length + ' numeri: ' + guessedNumbers.join(', '));
 
 }, 30000);
 
